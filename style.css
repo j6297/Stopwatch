@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background: #6E6E6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Mulish", sans-serif;
+}
+
+.main-container {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer {
+  font-size: 40px;
+  background: #BAFF39;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  /* animation: pulse 3s infinite; */  
+  /* if any one wants animations remove comment  */
+
+}
+.timer span {
+    width: 110px;
+    display: inline-block; 
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: #BAFF39;
+    color: #000; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #a1e228b2;
+}
+
+.laps {
+    width: 100%;
+}
+
+.lap-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
+
+.lap-title {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    font-weight: 700;
+}
+
+/* if any one wants animations  */
+
+/* 
+@keyframes pulse {
+    0% { transform: rotate(0deg) scale(0.8); }
+    25% { transform: rotate(0deg) scale(0.8); }
+    50% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(0deg) scale(0.8); }
+} */
+
